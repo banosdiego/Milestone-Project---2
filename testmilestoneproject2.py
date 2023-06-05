@@ -1,1 +1,4 @@
-print("test milestoneproject2")
+def testfunc():
+    print("test milestoneproject2")
+
+testfunc()
