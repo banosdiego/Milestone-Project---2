@@ -26,5 +26,4 @@ two_hearts = CARD("Hearts", "Two")
 three_clubs = CARD("Clubs","Three")
 a = two_hearts.value < three_clubs.value 
 print(a)
-
 #Test from ipad, created on ipad to see if its update the whole git project.
