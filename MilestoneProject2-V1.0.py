@@ -34,8 +34,24 @@ class DECK:
         return self.all_cards.pop()
 
 #Player Class
+class Player:
+    def __init__(self,name):
+        self.name = name
+        self.all_cards = []
+
+    def remove_card(self):
+        pass
+
+    def add_cards(self):
+        pass
+
+    def __str__(self):
+        return self.name + " tiene " + str(len(self.all_cards)) + " cartas"
 #2 players with 26 Cards Each
 #Game Logic
+
+
+#Testing Area
 two_hearts = CARD("Hearts", "Two")
 three_clubs = CARD("Clubs","Three")
 a = two_hearts.value < three_clubs.value 
@@ -52,3 +68,5 @@ carta1 = mydeck.deal_one()
 print (carta1)
 numero2 = len(mydeck.all_cards)
 print (numero2)
+newplayer = Player("Diego")
+print (newplayer)
