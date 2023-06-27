@@ -40,10 +40,10 @@ class Player:
         self.all_cards = []
 
     def remove_card(self):
-        pass
+        self.all_cards.pop()
 
     def add_cards(self):
-        pass
+        self.all_cards.extend()
 
     def __str__(self):
         return self.name + " tiene " + str(len(self.all_cards)) + " cartas"
