@@ -47,7 +47,7 @@ class Player:
 
     def __str__(self):
         return self.name + " tiene " + str(len(self.all_cards)) + " cartas"
-#2 players with 26 Cards Each
+
 #Game Logic
 
 
