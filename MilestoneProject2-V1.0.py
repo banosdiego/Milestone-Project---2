@@ -34,16 +34,19 @@ class DECK:
         return self.all_cards.pop()
 
 #Player Class
-class Player:
+class PLAYER:
     def __init__(self,name):
         self.name = name
         self.all_cards = []
 
     def remove_card(self):
-        pass
+        return self.all_cards.pop(0)
 
-    def add_cards(self):
-        pass
+    def add_cards(self,new_cards):
+        if type(new_cards) == type({}):
+            self.all_cards.extend(new_cards)
+        else:
+            self.all_cards.append(new_cards)
 
     def __str__(self):
         return self.name + " tiene " + str(len(self.all_cards)) + " cartas"
@@ -68,7 +71,13 @@ carta1 = mydeck.deal_one()
 print (carta1)
 numero2 = len(mydeck.all_cards)
 print (numero2)
-newplayer = Player("Diego")
+newplayer = PLAYER("Diego")
 print (newplayer)
+newplayer.add_cards(two_hearts)
+newplayer.add_cards(three_clubs)
+print(newplayer)
+print(newplayer.all_cards[1])
+newplayer.remove_card()
+print(newplayer)
 
 #testing github again hehehe greetings
