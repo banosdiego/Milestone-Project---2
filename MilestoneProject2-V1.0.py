@@ -70,3 +70,5 @@ numero2 = len(mydeck.all_cards)
 print (numero2)
 newplayer = Player("Diego")
 print (newplayer)
+
+#testing github again hehehe greetings
