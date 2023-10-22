@@ -61,6 +61,9 @@ a = two_hearts.value < three_clubs.value
 print(a)
 mydeck = DECK()
 b = mydeck.all_cards[-1]
+print("guia")
+print(b)
+print("guia")
 mydeck.shuffle()
 c = mydeck.all_cards
 for x in c:
